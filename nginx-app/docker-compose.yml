@@ -11,7 +11,7 @@ services:
       placement:
         constraints: [node.role == manager]
         
- web0002:
+  web0002:
     image: localhost:5000/nginx-app
     build: .
     ports:
