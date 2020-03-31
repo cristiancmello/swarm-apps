@@ -10,3 +10,13 @@ services:
     deploy:
       placement:
         constraints: [node.role == manager]
+        
+ web0002:
+    image: localhost:5000/nginx-app
+    build: .
+    ports:
+      - 80
+    restart: always
+    deploy:
+      placement:
+        constraints: [node.role == worker]
