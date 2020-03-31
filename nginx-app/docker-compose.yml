@@ -12,7 +12,7 @@ services:
         constraints: [node.role == manager]
         
   web0002:
-    image: 192.168.1.14:5000/nginx-app
+    image: localhost:5000/nginx-app
     ports:
       - 80
     restart: always
