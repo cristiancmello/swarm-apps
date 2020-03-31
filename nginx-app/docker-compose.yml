@@ -12,7 +12,7 @@ services:
         constraints: [node.role == manager]
         
   web0002:
-    image: localhost:5000/nginx-app
+    image: 192.168.1.14:5000/nginx-app
     build: .
     ports:
       - 80
